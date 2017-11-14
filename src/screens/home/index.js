@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { View, Text } from 'react-native';
+import styles from './styles';
 
 class HomeScreen extends React.Component{
     static navigationOptions = ({navigation}) => ({
@@ -7,7 +8,9 @@ class HomeScreen extends React.Component{
     })
     render(){
         return(
-            <Text>Hello from Home Screen</Text>
+            <View style={styles.container}>
+                <Text style={styles.text}>Hello from Home Screen</Text>
+            </View>
         )
     }
 }
