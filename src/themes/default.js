@@ -6,6 +6,11 @@ export default defaultTheme = {
     $textColor: '#222',
     $inverseTextColor: '#fff',
 
+    $h1FontSize: 40,
+    $h2FontSize: 34,
+    $h3FontSize: 28,
+    $h4FontSize: 22,
+
     $containerPadding: 16,
     $titleFontSize: 20,
 }
