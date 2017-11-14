@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import Text from '../../components/text/Text';
 import styles from './styles';
 
 class HomeScreen extends React.Component{
@@ -9,7 +10,10 @@ class HomeScreen extends React.Component{
     render(){
         return(
             <View style={styles.container}>
-                <Text style={styles.text}>Hello from Home Screen</Text>
+                <Text h1> Heading 1 </Text>
+                <Text h2> Heading 2 </Text>
+                <Text h3> Heading 3 </Text>
+                <Text h4> Heading 4 </Text>
             </View>
         )
     }
