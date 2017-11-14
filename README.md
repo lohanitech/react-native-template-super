@@ -1,6 +1,12 @@
 # React Native Template Super 
 A turbo starter template for react-native
 
+## Using
+To use this template to create your new project just type the following command
+```
+react-native init {project-name} --template super
+```
+
 ## Features
 - Various components inspired by [React Native Elements](https://github.com/react-native-training/react-native-elements).
 - Global styles and themes support using [React native extended stylesheet](https://github.com/vitalets/react-native-extended-stylesheet)
