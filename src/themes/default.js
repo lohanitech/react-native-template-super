@@ -5,4 +5,7 @@ export default defaultTheme = {
     $textOnPrimaryColor: '#fff',
     $textColor: '#222',
     $inverseTextColor: '#fff',
+
+    $containerPadding: 16,
+    $titleFontSize: 20,
 }
