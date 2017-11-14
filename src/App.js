@@ -2,14 +2,15 @@ import React from 'react';
 import { Text } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import { Provider } from 'react-redux';
-import EStyleSheet from 'react-native-extended-stylesheet';
 import { PersistGate } from 'redux-persist/es/integration/react';
 import createStore from './store';
 import RootNav from './navigators/RootNavigator';
+import bootstrap from './bootstrap';
 
 const { persistor, store } = createStore();
 
 const onBeforeLift = () => {};
+bootstrap();
 
 
 
@@ -30,7 +31,5 @@ let App = () => {
 }
 
 
-// Calculate stylesheet
-EStyleSheet.build();
 
 export default App;
