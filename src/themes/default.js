@@ -16,6 +16,7 @@ export default defaultTheme = {
     $buttonContainerMargin: 16,
     $buttonPadding: 19,
     $smallButtonPadding: 12,
+    $buttonIconColor: '#fff',
 
     $iconFontSize: 27,
     $iconColor: '$primaryColor',
