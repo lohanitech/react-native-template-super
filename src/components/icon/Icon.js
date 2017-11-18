@@ -10,8 +10,6 @@ import styles from './styles';
 class Icon extends Component {
 
 	getName() {
-		console.log(ic[this.props.name]);
-		console.log(this.props.name);
 		if (this.props.type === "Ionicons") {
 			if (typeof ic[this.props.name] !== "object") {
 				return this.props.name;
