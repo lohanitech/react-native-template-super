@@ -2,6 +2,7 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 import { Platform } from 'react-native';
 
 const stylesObject = {
+    $iconColor: '$buttonIconColor',
     container: {
       marginLeft: '$buttonContainerMargin',
       marginRight: '$buttonContainerMargin',
@@ -20,7 +21,12 @@ const stylesObject = {
       color: 'white',
       fontSize: '$fontSizeButton',
     },
-
+    icon: {
+        marginRight: 10,
+    },
+    iconRight: {
+        marginLeft: 10,
+    },
     small: {
       padding: '$smallButtonPadding',
     },

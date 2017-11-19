@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import Text from '../text/Text';
 import styles from './styles';
+import  Icon  from '../icon/Icon';
 
 
 const log = () => {
@@ -28,6 +29,9 @@ const Button = props => {
     title,
     onPress,
     accent,
+    icon,
+    iconComponent,
+    iconRight,
     backgroundColor,
     color,
     fontSize,
@@ -49,6 +53,22 @@ const Button = props => {
   } = props;
   let { Component } = props;
 
+  let IconComponent;
+
+  if(icon){
+    let IconElement;
+    IconElement = (iconComponent)?iconComponent:Icon;
+    IconComponent = (
+      <IconElement
+        {...icon}
+        color={icon.color || styles.$iconColor}
+        size={icon.size || styles._text.fontSize}
+        style={[(iconRight)?styles.iconRight:styles.icon, icon.style && icon.style]}
+      />
+    )
+  }
+
+  
   
   let loadingElement;
   if (loading) {
@@ -142,6 +162,7 @@ const Button = props => {
             disabled && disabledStyle && disabledStyle,
           ]}
         >
+          {(icon && !iconRight) && IconComponent}
           {loading && !loadingRight && loadingElement}
           <Text
             style={[
@@ -159,6 +180,7 @@ const Button = props => {
             {title}
           </Text>
           {loading && loadingRight && loadingElement}
+          {(icon && iconRight) && IconComponent}
         </View>
       </Component>
     </View>
@@ -169,6 +191,9 @@ Button.propTypes = {
   buttonStyle: PropTypes.any,
   title: PropTypes.string,
   onPress: PropTypes.any,
+  icon: PropTypes.object,
+  iconRight: PropTypes.bool,
+  iconComponent: PropTypes.any,
   accent: PropTypes.bool,
   backgroundColor: PropTypes.string,
   color: PropTypes.string,
