@@ -30,6 +30,15 @@ export default defaultTheme = {
     $cardTitleBottomMargin: 15,
     $imageCardTitleTopMargin: 15,
 
+    //avatar
+    $avatarSize: 34,
+    $mediumAvatarSize: 50,
+    $largeAvatarSize: 75,
+    $xlargeAvatarSize: 150,
+    $avatarForegroundColor: '$textOnPrimaryColor',
+    $avatarContainerPadding: 10,
+    
+
     $h1FontSize: 40,
     $h2FontSize: 34,
     $h3FontSize: 28,
