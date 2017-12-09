@@ -1,5 +1,5 @@
 import { StackNavigator, DrawerNavigator } from 'react-navigation';
-import { HomeScreen, ComponentListScreen }  from '../screens';
+import { HomeScreen, ComponentListScreen, LoginScreen }  from '../screens';
 import globalStyles from '../styles/GlobalStyles';
 
 const stackNavOptions = {
@@ -24,4 +24,7 @@ export default RootNavigator = DrawerNavigator({
             First: {screen:HomeScreen}
         },stackNavOptions)
     },
+    Login: {
+        screen: LoginScreen
+    }
 });
